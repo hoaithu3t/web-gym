@@ -156,7 +156,6 @@ header img {
 }
 #event .list-event .card-event .price div{
     position: absolute;
-    top: calc(100% - 12px);
     left: 50%;
     transform: translate(-50%, -100%);
     

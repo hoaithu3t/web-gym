@@ -1,0 +1,219 @@
+/* icon */
+.fab,
+.fas,
+.far,
+.icon {
+    margin: 5px;
+}
+/* general */
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+/* navbar */
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 25px; 
+    box-shadow: 2px 5px 5px #cccccc;
+}
+
+.d-block {
+    display: block;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+header div div {
+    text-align: center;
+    font-size: x-large;
+}
+
+header div ul {
+    text-align: center;
+}
+header div ul li {
+    display: inline;
+    padding: 10px;
+}
+header div ul li a {
+    text-align: center;
+    color: #cccccc;
+    text-decoration: none;
+}
+header div ul li a:hover {
+    color: black;
+}
+.active {
+    color: black;
+}
+.demo ul li {
+    display: inline;
+}
+#main-header .navbar-toggler-icon {
+    display: none;
+}
+/* body */
+
+/* card & totals */
+#body-payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 75px;
+}
+#body-payment .card-totals {
+    padding: 20px;
+}
+#body-payment .card-totals .card-payment {
+    display: flex;
+    flex: 1;
+    margin: 20px 0px;
+}
+#body-payment .card-totals .card-payment div {
+    margin: 10px;
+}
+#body-payment .card-totals .card-payment div h3 {
+    margin-bottom: 20px;
+}
+/* change-amount */
+.change-amount{
+    padding: 0px;
+    background-color: #f1f1f1;  
+}
+.change-amount{
+    display: inline-block;
+}
+.change-amount span {
+    padding: 0px 20px;
+}
+.change-amount button  {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.change-amount .btn-minus {
+    background-color: #cbcbcb;
+}
+.change-amount .btn-plus {
+    background-color: black;
+    color: white;
+}
+
+#body-payment .card-totals .card-payment div img {
+    width: 100%;
+}
+#body-payment .card-totals hr {
+    border: 1px solid #cccccc;
+}
+#body-payment .totals-payment {
+    line-height: 2;
+}
+#body-payment .totals-payment div {
+    display: flex;
+    justify-content: space-between;
+    color: #464646;
+}
+.total-money {
+    font-size: x-large;
+}
+.total-money p {
+    color: black;
+}
+.total-money .money {
+    color: #ff6900;
+}
+.money::after{
+    content: "$";
+}
+/* infor */
+#body-payment .infor{
+    color: #464646;
+    
+}
+
+#body-payment .infor form .name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+#body-payment .infor form .name .first-name {
+    padding-right: 10px;
+}
+#body-payment .infor form .name .last-name {
+    padding-left: 10px;
+}
+
+form {
+    margin: 20px;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+}
+form label{
+    margin-top: 10px;
+}
+form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin: 5px 0px 20px 0px;
+}
+form .btn-checkOut{
+    color: white;
+    background-color: #ff6900;
+    border-radius: 5px;
+    border: 1px solid #ff6900;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+}
+form .Payment-choose {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+form .Payment-choose button {
+    border: 1px solid #cbcbcb;
+}
+form .Payment-choose .Paypal{
+    margin-right: 20px;
+}
+form .Payment-choose img {
+    width: 100%;
+    height: 80px;
+}
+@media (max-width:780px) {
+    #body-payment {
+        margin: 25px;
+    }
+}
+@media (max-width : 500px) {
+    #main-header .navbar-toggler-icon {
+        display: block;
+        text-align: right;
+    }
+    #main-header .d-block {
+        display: none;
+    }
+    #body-payment {
+        margin: 15px;
+        grid-template-columns: 1fr;
+    }
+    form .Payment-choose img {
+        height: 60px;
+    }
+}
+@media (max-width : 350px) {
+    .navbar{
+        padding: 10px;
+    }
+    form .Payment-choose img {
+        height: 40px;
+    }
+}

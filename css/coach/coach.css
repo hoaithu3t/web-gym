@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+body{
+    background-color:  #f4f4f4;;
+}
+/* header */
+#main-header {
+    position: relative;
+}
+.navbar {
+    
+        background: -moz-linear-gradient(bottom, transparent 50%, rgba(0,0,0,0.7) 50%);
+        background: -o-linear-gradient(bottom, transparent 50%, #000000b3 50%);
+        background: -ms-linear-gradient(bottom,transparent 50%, rgba(0,0,0,0.7) 50%);
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, transparent),color-stop(0.7, rgba(0,0,0,0.7)));
+    
+    top: 0;
+    color: white;
+    position: absolute;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px;
+
+}
+.d-block {
+    display: block;
+}
+#main-header .navbar-toggler-icon{
+    display: none;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.navbar span {
+    text-align: center;
+    font-size: x-large;
+}
+
+header div ul {
+    text-align: center;
+    display: block;
+}
+header div ul li {
+    display: inline;
+    padding: 10px;
+}
+header div ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+header div ul li a:hover {
+    color: #ff6900;
+}
+.active {
+    color: #ff6900;
+}
+.demo ul li {
+    display: inline;
+}
+header img {
+    width: 100%;
+    margin: 0;
+}
+/* body */
+/* search */
+#search {
+    z-index: +1;
+    border: 1px solid #cecece;
+    margin: 0px 100px;
+    border-radius: 10px;
+    padding : 20px;
+    transform: translateY(-50%);
+    background-color: white;
+}
+#search form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5px;
+}
+#search form button,#search form select{
+    border: 1px solid #c0bdbdb3;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+#search button {
+    border: 1px solid #ff6900;
+    background-color: #ff6900;
+    color: aliceblue;
+}
+#search form select{
+    color: #a2a6a7;
+}
+
+/* Fitness teacher */
+.container-teacher {
+    padding: 0 100px 25px 100px;
+    margin: 0;
+}
+.container-teacher h1{
+    margin-bottom: 50px;
+}
+.list-teacher {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-teacher {
+    margin: 10px;
+    display: none;
+}
+.card-teacher p {
+    color: #ababab;
+}
+.teacher-contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #ababab;
+    margin: 30px;
+}
+.list-teacher .card-teacher img{
+    width: 100%;
+}
+/* TOP COACH */
+#top-coach .card-teacher {
+    background-color: white;
+}
+/* OUT COACH */
+#out-coach .list-teacher .card-teacher img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: #cfcfcf;
+}
+.footer-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px ;
+   
+}
+.footer-col div {
+    padding: 25px 70px;
+    justify-content: center;
+}
+.contact-inp input,
+.contact-inp button {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-inp input {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 90%;
+}
+.contact-inp button {
+    background-color: #ff6900;
+    color: #f4f4f4;
+    border: 1px solid #ff6900;
+    width: 100%;
+}
+.icon-facebook-footer{
+    color: #ff6900;
+}
+/* reponsive */
+@media (max-width : 1024px){
+    .container-teacher {
+        padding: 10px;
+        margin: 0;
+    }
+    #out-coach .list-teacher .card-teacher img{
+        width: 220px;
+        height: 220px;
+    }
+    .teacher-contact {
+        margin: 20px;
+    }
+}
+@media (max-width : 780px){
+    #out-coach .list-teacher .card-teacher img{
+        width: 165px;
+        height: 165px;
+    }
+    #fitness {
+        padding: 20px;
+    }
+    .footer-col {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+   
+    .footer-col div{
+        padding: 20px;
+        text-align: justify;
+    }
+}
+@media (max-width : 500px){
+    #main-header .navbar-toggler-icon{
+        display: block;
+        text-align: right;
+        top: 0px;     
+    }
+    #main-header .navbar-toggler-icon button{
+        background-color: white;
+        border: white;
+        justify-items: right;   
+    }
+    #main-header .d-block{
+        display: none;
+        text-align: left;
+    }
+    #main-header .d-block li{
+        display: block;
+        padding: 3px 0px;
+    }
+    #search {
+        margin: 0px 10px;
+        padding : 5px;
+    }
+    #search form select,button{
+        font-size: 10px;
+    }
+    #search h1{
+        font-size: 20px;
+    }
+    #search form {
+        margin: 0px;
+    }
+    #search form button, #search form select { 
+        padding: 5px;
+        margin: 2px; 
+    }
+    .list-teacher {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width : 350px){
+    #main-header .d-block li{
+        font-size: 10px;
+    }
+    #search {
+        margin: 2px;
+        padding : 5px;
+    }
+    #search h1{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    #search button i{
+        display: none;
+    }
+    
+    #search form button, #search form select { 
+        padding: 1px;
+        margin: 1px; 
+    
+    }
+    #out-coach .list-teacher .card-teacher img{
+        width: 280px;
+        height: 280px;
+    }
+    .list-teacher {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

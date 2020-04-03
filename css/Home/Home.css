@@ -1,0 +1,319 @@
+/* icon */
+.fab,
+.fas,
+.far {
+    margin: 5px;
+}
+/* general */
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+/* navbar */
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px; 
+}
+
+.d-block {
+    display: block;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+header div div {
+    text-align: center;
+    font-size: x-large;
+}
+
+header div ul {
+    text-align: center;
+}
+header div ul li {
+    display: inline;
+    padding: 10px;
+}
+header div ul li a {
+    text-align: center;
+    color: #cccccc;
+    text-decoration: none;
+}
+header div ul li a:hover {
+    color: black;
+}
+.active {
+    color: black;
+}
+.demo ul li {
+    display: inline;
+}
+header img {
+    width: 100%;
+}
+#main-header .navbar-toggler-icon{
+    display: none;
+}
+/* fitness */
+.pd-25-100 {
+    padding: 25px 100px;
+}
+.fitness-col {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.fitness-col div {
+    padding: 10px;
+    margin: 10px;
+}
+.fitness-col div i {
+    color: #ff6900;
+    font-size: 60px;
+}
+.fitness-col div p {
+    font-size: small;
+    color: #ababab;
+}
+/* classify */
+.w-100 {
+    width: 100%;
+}
+.classify-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.classify-img img {
+    height: 300px;
+    width: 100%;
+}
+.classify-img {
+    position: relative;
+}
+.classify-img-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+}
+/* tranning program */
+.tranning-grib {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    padding: 20px 0;
+    margin: 50px 0;
+}
+.tranning-grib img {
+    padding: 10px;
+    width: 90%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#tranning {
+    position: relative;
+}
+#tranning .tranning-grib
+.tranning-grib img:active {
+    transform: scale(1.25);
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+}
+/* event */
+.money {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+.money::before {
+    content: '$';
+}
+.color-logo {
+    color: #ff6900;
+}
+.btn-details {
+    border: 1px solid #ff6900;
+    background-color: transparent;
+    /*trong suot */
+    padding: 5px;
+    border-radius: 15px;
+}
+.content-event {
+    line-height: 1.5;
+}
+.content-event div {
+    padding: 12px;
+}
+.btn-day {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00379c;
+    color: white;
+    border: 1px solid #00379c;
+}
+.card-event {
+    display: grid;
+    grid-template-columns : 1fr 2fr 1fr;
+}
+.mg-50 {
+    margin: 50px;
+}
+.img-event {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+.text-bottom {
+    bottom: 10%;
+}
+.top-100 {
+    top: 100%;
+}
+.title-event {
+    margin: 15px;
+}
+.list-event {
+    margin-left: 50px;
+}
+#event .viewAll{
+    text-align: center;
+    margin: 30px;
+}
+#event .viewAll  a{
+    text-decoration: none;
+    color: #ff6900;
+}
+#event .list-event .card-event .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Fitness teacher */
+.container-teacher {
+    background-color: #f4f4f4;
+    padding: 25px 100px;
+    margin: 0;
+}
+.list-teacher {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-teacher {
+    background-color: white;
+    margin: 10px;
+    display: none;
+    animation-name: card-teacher;
+    animation-duration: 1.5s;
+}
+@keyframes card-teacher {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.card-teacher p {
+    color: #ababab;
+}
+.teacher-contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #ababab;
+    margin: 30px;
+}
+/* footer */
+footer {
+    background-color: black;
+    color: #cfcfcf;
+    text-align: justify;
+}
+.footer-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px 50px;
+}
+.footer-col div {
+    padding: 25px 75px;
+}
+.contact-inp input,
+.contact-inp button {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-inp input {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 90%;
+}
+.contact-inp button {
+    background-color: #ff6900;
+    color: #f4f4f4;
+    border: 1px solid #ff6900;
+    width: 100%;
+}
+.icon-facebook-footer{
+    color: #ff6900;
+}
+
+/* #show-case::before {
+	content: "";
+	background: url("../img/header_background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	z-index: -1;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+grid-template-columns: repeat(5, 1fr);
+border-top: 1px solid var(--logo-color);
+.main-banner img:hover {
+	transform: scale(1);
+}
+    text-decoration: line-through;
+    
+    grid-gap: 0.8rem;
+    transform: translateY(-140px);
+    grid-gap: 1.5rem;
+    grid-column: 1 / span 2;
+    position: relative;
+    position: absolute;
+
+    #sign-up .container form input[type="email"] {
+	height: 40px;
+	width: 300px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	padding-left: 20px;
+}
+
+#sign-up .container form input[type="submit"] {
+	padding: 13px 16px;
+}
+
+flex-wrap: wrap;
+
+border-bottom: 1px solid rgba(80, 78, 78, 0.426);
+#room-types .room:last-child {
+	border-bottom: none;
+}
+opacity: 0.8;
+
+display: inline-block; */
+
+/* flex box */
+

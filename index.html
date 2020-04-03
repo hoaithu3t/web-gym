@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/Home/Home.css">
+        <link rel="stylesheet" href="./css/Home/tablets.css">
+        <link rel="stylesheet" href="./css/Home/mobile.css">
+
+</head>
+<body>
+<!-- navbar -->
+
+    <header id="main-header">
+    <div class="navbar">
+        <div ><b>Zadel</b></div>
+        <div class="navbar-toggler-icon">
+            <button onclick="show_list()"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="d-block ">
+            <li><a href="#" class="active">Home<a></li>
+            <li><a href="services-cate.html">Our Services</a></li>
+            <li><a href="ListEvent.html">Event</a></li>
+            <li><a href="ListCart.html">Location</a></li>
+            <li><a href="coach.html">Coach</a></li>
+            <li><a href="Payment.html"><i class="fas fa-weight-hanging" ></i></a></li>
+        </ul>
+    </div>
+    <img src="./img/background.png">
+    </header>
+    <script>
+        var check = true;
+        function show_list(){
+            var list_item = document.getElementsByClassName("d-block");
+            if(check){
+                list_item[0].style.display = "block";
+            }
+            else{
+                list_item[0].style.display = "none";
+            }
+            check = !check;
+            
+        }
+    </script>
+<!-- fitness -->
+    <div id="fitness" class="pd-25-100">
+        <h1 class="center">GET YOUR HIGH FITNESS GOAL</h1>
+        <div class="fitness-col center">
+            <div>
+                <i class="fas fa-clipboard-list"></i>
+                <h4>Learn How To Motivate</h4>
+                <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are
+                very powerful.</p>
+            </div>
+            <div>
+                <i class="fas fa-heartbeat"></i>
+                <h4>How Hypnosis Can Help You</h4>
+                <p>The 12 steps to acquire mind-power is intended to build positive visuals, acquire mind power and help you achieve</p>
+            </div>
+            <div>
+                <i class="fas fa-people-carry"></i>
+                <h4>The Number 1 Secret Of Success</h4>
+                <p>When I was a young man, even a teenager for that matter, I always had an optimism that was hard for others to overcome.</p>
+            </div>
+            <div>
+                <i class="fas fa-shoe-prints"></i>
+                <h4>Hypnosis 12 Steps To Acquire Mind Power</h4>
+                <p>So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to
+                work towards any goal.</p>
+            </div>
+        </div>
+    </div>
+<!-- classify -->
+<div id="classify" class="w-100 classify-grid">
+    <div class="classify-img">
+        <img src="./img/gym.png">
+        <div class="classify-img-text">GYM</div>
+    </div>
+    <div class="classify-img">
+        <img src="./img/yoga.png">
+        <div class="classify-img-text">YOGA</div>
+    </div>
+    <div class="classify-img">
+        <img src="./img/orther.png">
+        <div class="classify-img-text">ORTHER</div>
+    </div>
+</div>
+<!-- Tranning program chua xong-->
+<div class="w-100 center" id="training">
+    <h1>TRANNING PROGRAM</h1>
+    <div class="tranning-grib">
+        <img src="./img/yoga-left.png" class="tranning-img-1">
+        <img src = "img/yoga-center.png" class="tranning-img-2">
+        <img src="./img/yoga-right.png" class="tranning-img-3">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+<!-- event -->
+<div id="event"> 
+    <!-- #event .list-event .card-event -->
+    <h1 class="center">EVENT</h1>
+    <div class="list-event">
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event1.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event2.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event3.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event4.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event5.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <div class="viewAll">
+        <a href="#"> View all</a>
+    </div>
+    </div>
+
+
+</div>
+<!-- Fitness teacher -->
+    <div class="container-teacher center">
+        <h1>Fitness teacher</h1>
+        <div class="list-teacher">
+            <div class="card-teacher">
+                <img src="./img/teacher1.png" class="w-100 img-teacher">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a> 
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher2.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher3.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher4.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher1.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher2.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher3.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+            <div class="card-teacher">
+                <img src="./img/teacher4.png" class="w-100">
+                <h4>Lida Chavez</h4>
+                <p>Yoga</p>
+                <div class="teacher-contact">
+                    <a><i class="fab fa-twitter-square"></i></a>
+                    <a><i class="fab fa-youtube"></i></a>
+                    <a><i class="fab fa-facebook"></i></a>
+                    <a><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    <button onclick="nextSlide()">Next slide</button>
+        <script>
+            var index = 0; 
+            var x= screen.width;
+            var m = 4;
+            if(x < 500) m=2;
+            if(x < 330) m=1;
+
+            showSlide(index);
+            function nextSlide(){
+                index++;
+                showSlide(index);
+            }
+           
+           
+            function showSlide(n) {
+               
+                var src_img_teacher = document.getElementsByClassName("card-teacher");
+                if(index + m >src_img_teacher.length-1) index = 0;
+                for(var i = 0; i< src_img_teacher.length ; i++) {                   
+                    src_img_teacher[i].style.display = "none";        
+                }
+                for(var i = 0; i< m; i++) {
+                    src_img_teacher[index+i].style.display = "block";   
+                }
+            }
+        </script>
+        
+    </div>
+    
+<!-- footer -->
+<footer>
+    <div class="footer-col">
+        <div >
+            <h2>ABOUT US</h2>
+            <p>Is Lasik in your future?
+            
+            Millions of Americans turn to Lasik Surgery when their vision is less than perfect and they’re tired of being tied down
+            to wearing glasses or contacts. What part of the eye is it that may be causing all your vision trouble? Your cornea!
+            When the shape of your cornea is irregular, the image on your retina is blurry and out-of-focus.</p>
+            <i class="fab fa-twitter-square" ></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook icon-facebook-footer" ></i>
+        </div>
+        <div >
+            <h2>RECENT EVENT</h2>
+            <p>March 2020</p>
+            <p>April 2020</p>
+            <p>May 2020</p>
+            <p>June 2020</p>
+            <p>July 2020</p>
+            <p>August 2020</p>           
+        </div>
+        <div class="contact-inp center">
+            <h2>CONTACT</h2>
+            <input placeholder="Name">
+            <input placeholder="Email">
+            <input placeholder="Comment">
+            <button>Sent Message</button>
+        </div>
+    </div>
+</footer>
+    
+<script src="./js/Home.js"></script>
+    
+</body>
+</html>

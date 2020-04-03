@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/coach/coach.css">
+
+
+</head>
+<body>
+<!-- header -->
+    <header id="main-header">
+        <img src="./img/img-coach.png">
+        <div class="navbar">
+            <div ><b>Zadel</b></div>
+            <div class="navbar-toggler-icon">
+                <button onclick="show_list()"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="d-block ">
+                <li><a href="index.html">Home<a></li>
+                <li><a href="services-cate.html">Our Services</a></li>
+                <li><a href="ListEvent.html">Event</a></li>
+                <li><a href="ListCart.html">Location</a></li>
+                <li><a href="coach.html" class="active">Coach</a></li>
+                <li><a href="Payment.html"><i class="fas fa-weight-hanging" ></i></a></li>
+            </ul>
+        </div>
+        <script>
+            var check = true;
+            function show_list(){
+                var list_item = document.getElementsByClassName("d-block");
+                if(check){
+                    list_item[0].style.display = "block";
+                }
+                else{
+                    list_item[0].style.display = "none";
+                }
+                check = !check;
+                
+            }
+        </script>
+        
+    </header>
+<!-- search -->
+
+<div id = "search">
+    <h1>
+        SEACH EVENT
+    </h1>
+    <form>
+        <select id="Select Category" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <select id="Select Category" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <select id="Select Category" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <button><i class = "fas fa-search"></i>Seach</button>
+    </form>
+</div>
+
+<!-- top coach //card teacher home-->
+
+<!-- Top coach -->
+<div id = "top-coach" class="container-teacher center">
+    <h1>TOP COACH</h1>
+    <div class="list-teacher">
+        <div class="card-teacher card-teacher-top">
+            <img src="./img/teacher1.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a> 
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-top">
+            <img src="./img/teacher2.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-top">
+            <img src="./img/teacher3.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-top">
+            <img src="./img/teacher4.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <button onclick="nextSlide1()">Next slide</button>
+        <script>
+            var index1 = 0; 
+            var x= screen.width;
+            var m = 4;
+            if(x < 500) m=2;
+            if(x < 330) m=1;
+
+            showSlide1(index1);
+
+            function nextSlide1(){
+                index1 ++;
+                showSlide1(index1);
+            }
+            function showSlide1(n) {   
+                var src_img_teacher1 = document.getElementsByClassName("card-teacher-top");
+                if(index1 + m >src_img_teacher1.length-1) index1 = 0;
+                for(var i = 0; i< src_img_teacher1.length ; i++) {                   
+                    src_img_teacher1[i].style.display = "none";        
+                }
+                for(var i = 0; i< m; i++) {
+                    src_img_teacher1[index1+i].style.display = "block";   
+                }
+            }
+        </script>
+    
+</div>
+
+<!-- our coach -->
+
+<div id="out-coach" class="center container-teacher">
+    <h1>OUR COACH</h1>
+    <div class="list-teacher">
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher1.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a> 
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher2.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher3.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher4.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher1.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a> 
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher2.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher3.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+        <div class="card-teacher card-teacher-our">
+            <img src="./img/teacher4.png" class="w-100">
+            <h4>Lida Chavez</h4>
+            <p>Yoga</p>
+            <div class="teacher-contact">
+                <a><i class="fab fa-twitter-square"></i></a>
+                <a><i class="fab fa-youtube"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <button onclick="nextSlide()">Next slide</button>
+        <script>
+            var index = 0; 
+            var x= screen.width;
+            var m = 4;
+            if(x < 500) m=2;
+            if(x < 330) m=1;
+
+            showSlide(index);
+            function nextSlide(){
+                index++;
+                showSlide(index);
+            }
+            function showSlide(n) {
+               
+                var src_img_teacher = document.getElementsByClassName("card-teacher-our");
+                if(index + m >src_img_teacher.length-1) index = 0;
+                for(var i = 0; i< src_img_teacher.length ; i++) {                   
+                    src_img_teacher[i].style.display = "none";        
+                }
+                for(var i = 0; i< m; i++) {
+                    src_img_teacher[index+i].style.display = "block";   
+                }
+            }
+        </script>
+        
+</div>
+<!-- footer -->
+<footer>
+    <div class="footer-col">
+        <div >
+            <h2>ABOUT US</h2>
+            <p>Is Lasik in your future?
+            
+            Millions of Americans turn to Lasik Surgery when their vision is less than perfect and they’re tired of being tied down
+            to wearing glasses or contacts. What part of the eye is it that may be causing all your vision trouble? Your cornea!
+            When the shape of your cornea is irregular, the image on your retina is blurry and out-of-focus.</p>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook icon-facebook-footer"></i>
+        </div>
+        <div class="center">
+            <h2>RECENT EVENT</h2>
+            <p>March 2020</p>
+            <p>April 2020</p>
+            <p>May 2020</p>
+            <p>June 2020</p>
+            <p>July 2020</p>
+            <p>August 2020</p>           
+        </div>
+        <div class="contact-inp center">
+            <h2>CONTACT</h2>
+            <input placeholder="Name">
+            <input placeholder="Email">
+            <input placeholder="Comment">
+            <button>Sent Message</button>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Event</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/ListEvent/ListEvent.css">
+   
+</head>
+<body>
+<!-- header -->
+    <header id="main-header">
+        <img src="./img/bg-listEvent.png">
+        <div class="navbar center ">
+            <span>Zadel</span>
+            <div class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+                <ul class="d-block list-item">
+                    <li><a href="index.html">Home<a></li>
+                    <li><a href="services-cate.html">Our Services</a></li>
+                    <li><a href="ListEvent.html" class="active">Event</a></li>
+                    <li><a href="ListCart.html">Location</a></li>
+                    <li><a href="coach.html">Coach</a></li>
+                    <li><a href="Payment.html"><i class="fas fa-weight-hanging" ></i></a></li>
+                </ul>
+        </div>
+    </header>
+<!-- search -->
+<div id = "search">
+    <h1>
+        SEACH EVENT
+    </h1>
+    <form>
+        <select id="Select Category" >
+            <option value="volvo">1</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <select id="Select Category" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <select id="Select Category" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <button><i class = "fas fa-search"></i>Seach</button>
+    </form>
+</div>
+<!-- list event -->
+<div id="event"> 
+    <!-- #event .list-event .card-event -->
+    <div class="list-event">
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event1.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button type="button" class="btn btn-info btn-lg " data-toggle="modal" data-target="#myModal">Details</button>
+            </div>
+
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event2.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event3.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event4.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+    <!--  -->
+    <div class="card-event mg-50">
+        <div >
+            <img src="./img/event5.png" class = "img-event">
+        </div>
+        <div class="content-event">
+            <div>
+                <button class="btn-day">05 Dec 2020</button>
+                <button class="btn-day">29 Jun 2020</button>
+            </div>
+            <h3 class="title-event">Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+            
+            <div class="d-flex">
+                <span class="flex-grow-1">
+                    <i class="far fa-user color-logo"></i>
+                    <span>Capacity: 5/20</span>
+                </span>
+                <span class="flex-grow-2 ">
+                    <i class = "fas fa-map-marker-alt color-logo"></i>
+                    <span>415 Temple Lane, Antioch, CA 94509</span>
+                </span>
+            </div>
+            <div>
+                <i class = "far fa-clock color-logo"></i>
+                <span>March 2, 2020 - March 20, 2020 6:00 am - 7:30 am , March 11, 2020 - March 26, 2020 5:00 am - 6:30 am</span>
+            </div>
+        </div>
+        <div class="price center text-bottom top-100">
+            <div>   
+                <p class="money color-logo">56</p>
+                <button class="btn-details color-logo">Details</button>
+            </div>
+           
+        </div>
+    </div>
+   
+    </div>
+
+
+</div>
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-col">
+        <div >
+            <h2>ABOUT US</h2>
+            <p>Is Lasik in your future?
+            
+            Millions of Americans turn to Lasik Surgery when their vision is less than perfect and they’re tired of being tied down
+            to wearing glasses or contacts. What part of the eye is it that may be causing all your vision trouble? Your cornea!
+            When the shape of your cornea is irregular, the image on your retina is blurry and out-of-focus.</p>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook icon-facebook-footer"></i>
+        </div>
+        <div class="center">
+            <h2>RECENT EVENT</h2>
+            <p>March 2020</p>
+            <p>April 2020</p>
+            <p>May 2020</p>
+            <p>June 2020</p>
+            <p>July 2020</p>
+            <p>August 2020</p>           
+        </div>
+        <div class="contact-inp center">
+            <h2>CONTACT</h2>
+            <input placeholder="Name">
+            <input placeholder="Email">
+            <input placeholder="Comment">
+            <button>Sent Message</button>
+        </div>
+    </div>
+</footer>
+
+
+
+</html>

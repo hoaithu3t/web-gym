@@ -1,0 +1,174 @@
+/* header */
+#main-header {
+    position: relative;
+}
+.navbar {
+    background-color: transparent;
+    top: 0;
+    color: white;
+    position: absolute;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.navbar span {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: x-large;
+}
+
+header div ul {
+    text-align: center;
+    display: block;
+}
+header div ul li {
+    display: inline;
+    padding: 10px;
+}
+header div ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+header div ul li a:hover {
+    color: #ff6900;
+}
+.active {
+    color: #ff6900;
+}
+.demo ul li {
+    display: inline;
+}
+header img {
+    width: 100%;
+}
+.navbar-toggler-icon{
+    display: none;
+}
+/* body */
+#main-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px ;
+}
+#main-body img {
+    width: 100%;
+    height: 100%;
+}
+#main-body .card{
+    border: 1px solid #cfcfcf;
+    padding: 20px;
+    justify-content: center;
+}
+#main-body .card .category {
+    color: #ff6900;
+}
+
+#main-body .card img{
+    width: 20px;
+    height: 20px;
+}
+.x--50 {
+    transform: translateX(-50%);
+}
+.x--100{
+    transform: translate(-100%);
+}
+#main-body .card button {
+    text-align: center;
+    padding: 10px 50px;
+}
+.money {
+    display: block;
+    float: right;
+    color: #ff6900;
+}
+.money::before {
+    content: "$";
+}
+#main-body .card .center{
+    text-align: center;
+}
+#main-body .card button {
+    color: white;
+    background-color: #ff6900;
+    border: 1px solid #ff6900;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: #cfcfcf;
+}
+.footer-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px ;
+   
+}
+.footer-col div {
+    padding: 25px 70px;
+    justify-content: center;
+}
+.contact-inp input,
+.contact-inp button {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-inp input {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 90%;
+}
+.contact-inp button {
+    background-color: #ff6900;
+    color: #f4f4f4;
+    border: 1px solid #ff6900;
+    width: 100%;
+}
+.icon-facebook-footer{
+    color: #ff6900;
+}
+@media(max-width : 780px) {
+    .footer-col div {
+        padding: 25px;
+    }
+    #main-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .footer-col {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: justify;
+        padding: 20px;
+    }
+}
+@media (max-width : 500px) {
+    .navbar-toggler-icon{
+        display: block;
+        text-align: right;
+    }
+    .navbar-toggler-icon i{
+        margin: 20px;
+    }
+    .d-block {
+        display: none;
+    }
+    #main-body{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #main-body .card h1 {
+        font-size: 20px;
+    }
+    #main-body .card p{
+        font-size: 12px;
+    }
+}

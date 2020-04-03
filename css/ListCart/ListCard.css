@@ -1,0 +1,223 @@
+/* icon */
+.fab,
+.fas,
+.far,
+.icon {
+    margin: 5px;
+}
+/* general */
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+/* navbar */
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 25px; 
+    box-shadow: 2px 5px 5px #cccccc;
+}
+
+.d-block {
+    display: block;
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+header div div {
+    text-align: center;
+    font-size: x-large;
+}
+
+header div ul {
+    text-align: center;
+}
+header div ul li {
+    display: inline;
+    padding: 10px;
+}
+header div ul li a {
+    text-align: center;
+    color: #cccccc;
+    text-decoration: none;
+}
+header div ul li a:hover {
+    color: black;
+}
+.active {
+    color: black;
+}
+.demo ul li {
+    display: inline;
+}
+.navbar-toggler-icon{
+    display: none;
+}
+/* list cart */
+#list-card {
+    margin : 50px;
+}
+#list-card .container-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 3fr;
+}
+#list-card .container-card div{
+    padding: 20px;
+    justify-content: center;
+}
+#list-card .container-card div img{
+    width: 100%;
+}
+#list-card .container-card div .icon {
+    color: #cfcfcf;
+    font-size: 36px;
+}
+
+#list-card .container-card div {
+    display: flex;
+    align-items: center;
+}
+#list-card .container-card div .change-number {
+    text-align: center;
+    flex-direction: column;
+}
+#list-card .container-card div .change-number h6{
+    font-size: small;
+}
+#list-card .container-card div .change-number div {
+    padding: 0px;
+    background-color: #f1f1f1;
+    display: block;   
+}
+#list-card .container-card div .change-number div button  {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+#list-card .container-card div .change-number div .btn-minus {
+    background-color: #cbcbcb;
+}
+#list-card .container-card div .change-number div .btn-plus {
+    background-color: black;
+    color: white;
+}
+#list-card .container-card div .change-number div span  {
+    padding: 5px 10px;
+}
+.money {
+    color: #ff6900;
+    font-size: xx-large;
+}
+.money::before {
+    content: "$";
+}
+#list-card .btn-checkOut {
+    text-align: right;
+}
+#list-card .btn-checkOut button {
+    color: antiquewhite;
+    border: 1px solid #ff6900;
+    background-color: #ff6900;
+    padding: 15px 70px;
+    margin: 20px;
+}
+.delete-card, .money {
+    display: block;
+    float: right;
+}
+/* footer */
+footer {
+    background-color: black;
+    color: #cfcfcf;
+}
+.footer-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px 50px;
+}
+.footer-col div {
+    padding: 25px 75px;
+}
+.contact-inp input,
+.contact-inp button {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-inp input {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 90%;
+}
+.contact-inp button {
+    background-color: #ff6900;
+    color: #f4f4f4;
+    border: 1px solid #ff6900;
+    width: 100%;
+}
+.icon-facebook-footer{
+    color: #ff6900;
+}
+@media (max-width : 920px){
+    #list-card .container-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr 3fr;
+    }
+    #list-card .container-card h2{
+        font-size: 20px;
+    }
+    #list-card .container-card div{
+        padding: 10px;
+        justify-content: center;
+    }
+    #list-card .container-card div .change-number div button  {
+        padding: 2px;
+        border-radius: 5px;
+    }
+    #list-card .container-card div .change-number div span  {
+        padding: 2px 5px;
+    }
+    .footer-col {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .footer-col div {
+        padding: 10px;
+        text-align: justify;
+    }
+}
+@media (max-width : 680px){
+    .navbar-toggler-icon{
+        display: block;
+        text-align: right;
+    }
+    .d-block{
+        display: none;
+    }
+    #list-card .container-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #list-card .container-card h2{
+        font-size: 16px;
+    }
+    #list-card .container-card .person-and-money{
+        display: inline;
+        padding: 0px;
+    }
+    #list-card .container-card .person-and-money h6{
+        font-size: 10px;
+    }
+    #list-card .container-card div .change-number div button i{
+        font-size: 10px;
+    }
+    
+    
+
+}

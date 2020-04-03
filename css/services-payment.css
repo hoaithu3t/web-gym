@@ -1,0 +1,319 @@
+body{
+    background-color: #f1f1f1;
+}
+/* general */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* header */
+#main-header {
+    position: relative;
+}
+.navbar {
+    background-color: transparent;
+    top: 30px;
+    color: white;
+    position: absolute;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.navbar span {
+    text-align: center;
+    font-size: x-large;
+}
+
+header div ul {
+    text-align: center;
+    display: block;
+}
+header div ul li {
+    display: inline;
+    padding: 10px;
+}
+header div ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+header div ul li a:hover {
+    color: #ff6900;
+}
+header div ul li .active {
+    color: #ff6900;
+}
+.demo ul li {
+    display: inline;
+}
+header img {
+    width: 100%;
+}
+.navbar-toggler-icon{
+    display: none;
+}
+/* body */
+#payment-body{
+    transform: translateY(-100px);
+    background-color: white;
+    margin: 0px 75px;
+    padding: 20px;
+    line-height: 1.5;
+}
+#payment-body .title {
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 5px;
+}
+#payment-body .title p {
+    color: #ff6900;
+}
+#payment-body .title .money {
+    color: white;
+    font-size: 24;
+    width: 40px;
+    height: 40px;
+    line-height: 2.5;
+    display: flex;
+    border-radius: 50%;
+    background-color: #ff6900;
+    justify-content: center;
+    font-weight: bold;
+}
+.container-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.set-people span{
+    background-color: #f1f1f1;
+    
+}
+#payment-body .title .money div{
+    justify-content: center;
+    text-align: center;
+}
+.chainner input{
+    width: 45%;
+    margin: 10px 15px 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 105, 0, 0.16);
+    border: none;
+    
+}
+.select-number {
+    margin: 20px 10px;
+}
+/* change-amount */
+.change-amount{
+    display: inline-block;
+    background-color: #f1f1f1;  
+    
+}
+.change-amount button  {
+    
+    border: none;
+    padding: 10px;
+    border-radius: 5px;   
+    background-color:#4d9dff;
+    color: white;
+
+}
+.change-amount span {
+    padding: 0px 150px;
+}
+/* calendar circle */
+
+#payment-body hr {
+    border: 1px solid #ff6900;
+}
+#payment-body .chainner {
+    margin: 20px 0;
+}
+.list-teacher{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.list-teacher .choose {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+}
+#payment-body .btn-booknow {
+    display: flex;
+    justify-content: center; 
+}
+#payment-body .btn-booknow button{
+    background-color: #ff6900;
+    border: none;
+    color: white;
+    padding: 10px 100px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.calender {
+    line-height: 2;
+    border: 1px solid #ff6900;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.calender ul {
+    list-style-type: none;
+}
+.calender ul li {
+    text-align: center;
+}
+.number-month {
+    text-align: center;
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+.month .prev,.next{
+    float: left;
+    border: 1px solid #00379c;
+    background-color: #00379c;
+    color: white;
+    width: 32px;
+    border-radius: 50%;
+    margin: 0px 10px;
+
+}
+.month .next {
+    float: right;
+}
+.calender .weekday ,.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10px 0px;
+    text-align: center;
+   justify-items: center;
+}
+.calender .days .active {
+    border: 1px solid #ff6900;
+    background-color: white;
+}
+.calender .days li{
+    background:  #f1f1f1;
+    width: 35px;
+    height: 35px;
+    line-height: 1;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 10px;
+}
+
+/* footer */ 
+footer {
+    background-color: black;
+    color: #cfcfcf;
+}
+.footer-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px ;
+    
+}
+.footer-col div {
+    padding: 25px 70px;
+    justify-content: center;
+}
+.contact-inp input,
+.contact-inp button {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact-inp input {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 90%;
+}
+.contact-inp button {
+    background-color: #ff6900;
+    color: #f4f4f4;
+    border: 1px solid #ff6900;
+    width: 100%;
+}
+.icon-facebook-footer{
+    color: #ff6900;
+}
+@media(max-width : 780px) {
+    .container-body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-col div {
+        padding: 25px;
+    }
+    .footer-col {  
+        text-align: justify;
+        padding: 20px;
+    }
+}
+@media (max-width : 500px) {
+    .navbar-toggler-icon{
+        display: block;
+        text-align: right;
+        padding: 5px 20px;
+    }
+    .d-block {
+        display: none;
+    }
+    #payment-body{
+        transform: translateY(0px);
+        margin: 0px;
+        padding: 10px;
+    }
+    .chainner input{
+        padding: 10px;
+        width: 40%;
+        margin: 5px;
+    }
+    .calender {
+        line-height: 1.2;
+        padding: 0px;
+        border-radius: 5px;
+        margin: 20px 0px;
+    }
+    .calender .days li{
+        background:  #f1f1f1;
+        width: 25px;
+        height: 25px;
+        line-height: 1;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 5px;
+    }
+    .list-teacher{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .change-amount button  {
+        
+        border: none;
+        padding: 10px;
+        border-radius: 5px;   
+        background-color:#4d9dff;
+        color: white;
+    
+    }
+    .change-amount span {
+        padding: 0px 100px;
+    }
+    .footer-col {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+}
+@media (max-width : 350px) {
+    .calender li{
+        font-size: 12px;
+    }
+}

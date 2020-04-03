@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+            integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+<body>
+<!-- navbar -->
+    <header id="main-header">
+        <div class="navbar">
+            <div ><b>Zadel</b></div>
+            <div class="navbar-toggler-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="d-block ">
+                <li><a href="index.html">Home<a></li>
+                <li><a href="services-cate.html">Our Services</a></li>
+                <li><a href="ListEvent.html">Event</a></li>
+                <li><a href="ListCart.html">Location</a></li>
+                <li><a href="coach.html">Coach</a></li>
+                <li><a href="Payment.html"><i class="fas fa-weight-hanging" ></i></a></li>
+            </ul>
+        </div>
+    </header>
+<!-- body -->
+<div id="body-payment">
+    <div class="card-totals">
+        <!-- card -->
+        <div class="card-payment">
+            <div>
+                <img src="./img/img-payment.png">
+            </div>
+
+            <div>
+                <h3>Yoga DIY - Lunging, foot & knee alignment and breathing</h3>
+                <p>Number of person:</p>
+                <div class="change-amount">
+                    <button class="btn-minus"><i class="fas fa-minus "></i></button>
+                    <span>1</span>
+                    <button class="btn-plus"><i class="fas fa-plus "></i></button>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <div class="totals-payment">
+            <h2>Cart totals:</h2>
+            <div>
+                <p>Yoga DIY - Lunging, foot & knee alignment and breathing</p>
+                <p class="money">59</p>
+            </div>
+            <div>
+                <p>Person x1:</p>
+                <p class="money">10</p>
+            </div>
+            <div>
+                <p>Shipping:</p>
+                <p class="money">0</p>
+            </div>
+            <div class="total-money">
+                <p>TOTAL:</p>
+                <p class="money">69</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="infor">
+        <form>
+            <div class="name">
+                <div class="first-name">
+                    <label for="Fname" >First name : </label><br/>
+                    <input type="text" id= "Fname" name = "Fname"> <br />
+                </div>
+                <div class="last-name">
+                    <label for="Lname">Last name : </label><br />
+                    <input type="text" id= "Lname" name = "Lname"><br />
+                </div>
+            </div>
+            <label for="Email" >Email :</label><br />
+            <input type="text" id= "Email" name = "Email">
+            <br />
+            <label for="Phone">Phone :</label><br />
+            <input type="text" id= "Phone" name = "Phone">
+            <br />
+            <label for="Address">Address :</label><br />
+            <input type="text" id= "Address" name = "Address">
+            <br />
+            <label for="Messenge">Messenge :</label><br />
+            <input type="text" id= "Messenge" name = "Messenge" >
+            <label for="Payment">Payment :</label><br />
+            <div class="Payment-choose">
+                <button class="Paypal"><img src="./img/paypal.jpg"></button>
+                <button><img src="./img/bank-transfer.png"></button>
+            </div>
+            
+            <button class="btn-checkOut">Check Out</button>
+        </form>
+        
+    </div>
+
+</div>
+
+</body>
+</html>
